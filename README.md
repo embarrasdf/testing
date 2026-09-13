@@ -33,7 +33,7 @@ Add the following to your version catalog:
 
 ```toml
 [versions]
-maindispatcher-extension = "0.0.31"
+maindispatcher-extension = "0.0.36"
 
 [dependencies]
 maindispatcher-extension = { group = "com.embarrasdf.testing", name = "maindispatcher-extension", version.ref = "maindispatcher-extension" }
@@ -48,7 +48,7 @@ testImplementation(libs.maindispatcher.extension)
 Or directly add the dependency in your `build.gradle.kts` file:
 
 ```kotlin
-testImplementation("com.embarrasdf.testing:maindispatcher-extension:0.0.31")
+testImplementation("com.embarrasdf.testing:maindispatcher-extension:0.0.36")
 ```
 
 ## `maindispatcher-rule`
@@ -85,7 +85,7 @@ Add the following to your version catalog:
 
 ```toml
 [versions]
-maindispatcher-rule = "0.0.31"
+maindispatcher-rule = "0.0.36"
 
 [dependencies]
 maindispatcher-rule = { group = "com.embarrasdf.testing", name = "maindispatcher-rule", version.ref = "maindispatcher-rule" }
@@ -101,6 +101,6 @@ Or directly add the dependency in your `build.gradle.kts` file:
 
 ```kotlin
 dependencies {
-    testImplementation("com.embarrasdf.testing:maindispatcher-rule:0.0.31")
+    testImplementation("com.embarrasdf.testing:maindispatcher-rule:0.0.36")
 }
 ```
