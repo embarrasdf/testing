@@ -4,7 +4,7 @@ plugins {
     `kotlin-dsl`
 }
 
-group = "com.alexrdclement.testing.maindispatcherrule.buildlogic"
+group = "com.embarrasdf.testing.maindispatcherrule.buildlogic"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17

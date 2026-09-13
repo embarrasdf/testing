@@ -7,7 +7,7 @@ A collection of Kotlin testing libraries and tools.
 A JUnit Jupiter Extension that sets `Dispatchers.Main` to a `TestDispatcher` for unit testing coroutines that use the Main dispatcher.
 
 ```kotlin
-import com.alexrdclement.testing.MainDispatcherExtension
+import com.embarrasdf.testing.MainDispatcherExtension
 import kotlinx.coroutines.*
 import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Assertions.assertEquals
@@ -25,7 +25,7 @@ class MainDispatcherTest {
 }
 ```
 
-[Source](maindispatcher-extension/src/main/kotlin/com/alexrdclement/testing/MainDispatcherExtension.kt)
+[Source](maindispatcher-extension/src/main/kotlin/com/embarrasdf/testing/MainDispatcherExtension.kt)
 
 ### Setup
 
@@ -36,7 +36,7 @@ Add the following to your version catalog:
 maindispatcher-extension = "0.0.29"
 
 [dependencies]
-maindispatcher-extension = { group = "com.alexrdclement.testing", name = "maindispatcher-extension", version.ref = "maindispatcher-extension" }
+maindispatcher-extension = { group = "com.embarrasdf.testing", name = "maindispatcher-extension", version.ref = "maindispatcher-extension" }
 ```
 
 Then add the following dependency to your `build.gradle.kts` file:
@@ -48,7 +48,7 @@ testImplementation(libs.maindispatcher.extension)
 Or directly add the dependency in your `build.gradle.kts` file:
 
 ```kotlin
-testImplementation("com.alexrdclement.testing:maindispatcher-extension:0.0.29")
+testImplementation("com.embarrasdf.testing:maindispatcher-extension:0.0.29")
 ```
 
 ## `maindispatcher-rule`
@@ -56,7 +56,7 @@ testImplementation("com.alexrdclement.testing:maindispatcher-extension:0.0.29")
 A JUnit 4 Rule that sets `Dispatchers.Main` to a `TestDispatcher` for unit testing coroutines that use the Main dispatcher.
 
 ```kotlin
-import com.alexrdclement.testing.MainDispatcherRule
+import com.embarrasdf.testing.MainDispatcherRule
 import kotlinx.coroutines.*
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
@@ -77,7 +77,7 @@ class MainDispatcherTest {
 }
 ```
 
-[Source](maindispatcher-rule/src/main/kotlin/com/alexrdclement/testing/MainDispatcherRule.kt)
+[Source](maindispatcher-rule/src/main/kotlin/com/embarrasdf/testing/MainDispatcherRule.kt)
 
 ### Setup
 
@@ -88,7 +88,7 @@ Add the following to your version catalog:
 maindispatcher-rule = "0.0.29"
 
 [dependencies]
-maindispatcher-rule = { group = "com.alexrdclement.testing", name = "maindispatcher-rule", version.ref = "maindispatcher-rule" }
+maindispatcher-rule = { group = "com.embarrasdf.testing", name = "maindispatcher-rule", version.ref = "maindispatcher-rule" }
 ```
 
 Then add the following dependency to your `build.gradle.kts` file:
@@ -101,6 +101,6 @@ Or directly add the dependency in your `build.gradle.kts` file:
 
 ```kotlin
 dependencies {
-    testImplementation("com.alexrdclement.testing:maindispatcher-rule:0.0.29")
+    testImplementation("com.embarrasdf.testing:maindispatcher-rule:0.0.29")
 }
 ```

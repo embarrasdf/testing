@@ -1,5 +1,5 @@
 [versions]
-embarrasdf-gradle-plugins = "0.0.127"
+embarrasdf-gradle-plugins = "0.0.129"
 kotlinx-coroutines-test = "1.11.0"
 junit4 = "4.13.2"
 junit-jupiter-api = "6.1.0"

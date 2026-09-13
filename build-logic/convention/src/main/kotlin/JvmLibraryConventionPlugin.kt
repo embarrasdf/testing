@@ -1,4 +1,4 @@
-import com.alexrdclement.testing.maindispatcherrule.convention.configureKotlin
+import com.embarrasdf.testing.maindispatcherrule.convention.configureKotlin
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure

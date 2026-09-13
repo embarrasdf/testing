@@ -1,4 +1,4 @@
-package com.alexrdclement.testing.maindispatcherrule.convention
+package com.embarrasdf.testing.maindispatcherrule.convention
 
 import org.gradle.api.Project
 import org.gradle.api.artifacts.VersionCatalog
