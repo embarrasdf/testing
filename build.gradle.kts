@@ -4,7 +4,7 @@ plugins {
 
 githubRelease {
     githubToken = System.getenv("GITHUB_TOKEN")
-    repository = "alexrdclement/testing"
+    repository = "embarrasdf/testing"
     enabled = !version.toString().endsWith("SNAPSHOT")
     newTagRevision = System.getenv("GITHUB_SHA")
 }

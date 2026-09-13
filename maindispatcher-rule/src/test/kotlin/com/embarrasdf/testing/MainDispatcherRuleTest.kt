@@ -1,4 +1,4 @@
-package com.alexrdclement.testing
+package com.embarrasdf.testing
 
 import kotlinx.coroutines.*
 import kotlinx.coroutines.test.runTest
