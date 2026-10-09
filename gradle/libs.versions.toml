@@ -12,6 +12,7 @@ junit-jupiter-engine = { group = "org.junit.jupiter", name = "junit-jupiter-engi
 junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform-launcher" }
 
 [plugins]
+embarrasdf-format = { id = "com.embarrasdf.gradle.plugin.format", version.ref = "embarrasdf-gradle-plugins" }
 embarrasdf-github-release = { id = "com.embarrasdf.gradle.plugin.github.release", version.ref = "embarrasdf-gradle-plugins" }
 embarrasdf-jvm-library = { id = "com.embarrasdf.gradle.plugin.jvm.library", version.ref = "embarrasdf-gradle-plugins" }
 embarrasdf-kotlin-multiplatform-library = { id = "com.embarrasdf.gradle.plugin.kotlin.multiplatform.library", version.ref = "embarrasdf-gradle-plugins" }
