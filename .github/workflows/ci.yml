@@ -1,4 +1,4 @@
-name: "CI"
+name: CI
 
 on:
   push:
@@ -17,39 +17,11 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  test:
-    name: "Test"
-    runs-on: ubuntu-latest
-    timeout-minutes: 30
-
-    steps:
-      - uses: actions/checkout@v7
-        with:
-          fetch-depth: 0
-
-      - name: Copy CI gradle.properties
-        run: mkdir -p ~/.gradle ; cp .github/ci-gradle.properties ~/.gradle/gradle.properties
-
-      - name: Setup JDK
-        uses: actions/setup-java@v6
-        with:
-          distribution: 'zulu'
-          java-version: 21
-
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v6
-        with:
-          add-job-summary-as-pr-comment: 'on-failure'
-          build-scan-publish: true
-          build-scan-terms-of-use-url: 'https://gradle.com/terms-of-service'
-          build-scan-terms-of-use-agree: 'yes'
-
-      - name: Run Tests
-        run: ./gradlew check --no-configuration-cache
-
-      - name: Upload test results
-        if: always()
-        uses: actions/upload-artifact@v7
-        with:
-          name: test-results
-          path: '**/build/test-results/test*/*.xml'
+  ci:
+    uses: embarrasdf/devops/.github/workflows/ci.yml@claude/loving-mendel-w26y87-ci-test
+    permissions:
+      contents: write
+      pull-requests: write
+    with:
+      test-tasks: test
+      apple-test-tasks: ''
