@@ -24,5 +24,4 @@ jobs:
       contents: write
       pull-requests: write
     with:
-      test-tasks: test
       apple-test-tasks: ''
